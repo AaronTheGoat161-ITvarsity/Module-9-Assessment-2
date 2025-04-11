@@ -77,18 +77,18 @@
                 var output = `<table id="cities">`;
                     output += `
                     <tr>
-                        <th class="col1"></th>;
-                        <th class="col2"></th>;
-                        <th></th>;
+                        <th class="col1"></th>
+                        <th class="col2"></th>
+                        <th></th>
                         
                     </tr>`;
 
                     for(a = 0; a < cities.length; a++){
                         output += `
                             <tr>
-                                <td><img src="img/${cities[a].flag}"/></td>;
-                                <td class="col1">${cities[a].name}</td>;
-                                <td class="col2">${getCurrentTime(cities[a].utcOffset)}</td>;
+                                <td><img src="img-2/${cities[a].flag}"/></td>
+                                <td class="col1">${cities[a].name}</td>
+                                <td class="col2">${getCurrentTime(cities[a].utcOffset)}</td>
                             </tr>
                             `;
                         }
