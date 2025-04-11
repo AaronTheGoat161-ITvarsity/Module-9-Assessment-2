@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <body>
         <p id="local">Loading...</p>
         <div id="output"></div>
-
+        
         <script>
             var timer = setInterval(displayWorldTime, 1000);
 
@@ -39,7 +39,7 @@
                 {name: "Stockholm", utcOffset: +1, flag: "Sweden.png"},
                 {name: "Xiamen", utcOffset: +8, flag: "China.png"},
                 {name: "Yerevan", utcOffset: +4, flag: "Armenia.png"},
-                {name: "Zurich",  utcOffset: +1, flag: "Switzerland.png"} 
+                {name: "Zurich",  utcOffset: +1, flag: "Switzerland.png"}
             ];
 
             cities.sort(compare);
@@ -86,7 +86,7 @@
                     for(a = 0; a < cities.length; a++){
                         output += `
                             <tr>
-                                <td><img src="img-2/${cities[a].flag}"/></td>
+                                <td class="flag"><img src="img-2/${cities[a].flag}"/></td>
                                 <td class="col1">${cities[a].name}</td>
                                 <td class="col2">${getCurrentTime(cities[a].utcOffset)}</td>
                             </tr>

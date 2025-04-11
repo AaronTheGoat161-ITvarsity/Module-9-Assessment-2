@@ -1,36 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 body{
-    font-family: "Raleway", sans-serif;
-
-}
-#local{
-    width: auto;
-    background-color: #1e09ff;
-    padding: 15px 0;
     margin: 0;
+    font-family: 'Poppins', 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #f3f9f1, #fef9f4);
+    color: #2f3542;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
 
-    font-size: 1.5rem;
-    color: white;
+    
+    background-image: url('img-2/pexels-nastyasensei-66707-335393.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+      
+}
+
+#local{
+    width: 100%;
+    background: linear-gradient(135deg, #f3f9f1, #fef9f4);
+    padding: 15px 0;
     text-align: center;
+    font-size: 2.5rem;
+    color: #ff6b81; /* coral pink */
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
 }
 
 #cities{
     border-collapse: collapse;
     width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px; /* Adds space between rows */
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
 }
 
+#cities tr {
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
 #cities td{
-    border: 1px solid #dedede;
+    border-left: 6px solid #ffbe76; /* little summer stripe */
     padding: 8px;
+    width: 100%;
+    max-width: 1200px;
 }
 
-#cities tr:nth-child(even){
-    background-color: #f2f2f2;
+#cities tr:hover {
+    transform: translateY(-4px) scale(1.01);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  }
+
+#cities tr:nth-child(even),
+#cities tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
+#cities tr:nth-child(even) td {
+    border-left-color: #70a1ff; /* rotate colors for fun */
+}
+  
+
+#cities td, #cities th {
+  padding: 18px 26px;
+  text-align: left;
+  font-size: 1rem;
+}
 .col1{
     width: 10%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
 
 .col2{
     width: 45%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc70;
+}
+
+.flag{
+  width: 10%;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
