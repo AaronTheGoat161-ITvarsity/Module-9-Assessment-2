@@ -82,13 +82,14 @@ body{
     font-weight: 700;
     margin-bottom: 0.5rem;
     letter-spacing: 1px;
+    color: #70a1ff;
 }
 
 .col2{
     width: 45%;
     font-size: 2rem;
     font-weight: bold;
-    color: #70a1ff;
+    color: #ffcc70;
 }
 
 .flag{
